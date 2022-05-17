@@ -1,4 +1,65 @@
-h1 {
+body {
+  background-color: rgb(194, 201, 240);
   font-family: "Roboto", sans-serif;
   text-align: center;
+  margin: 0;
+  height: 100vh;
+}
+
+#menuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(175, 184, 233);
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  z-index: 2;
+  transform: rotate(-45);
+  cursor: pointer;
+}
+
+#menu {
+  background-color: rgb(175, 184, 233); 
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border-radius: 15%;
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+li {
+  padding: 5px;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+  text-decoration-color: white;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+
+@media screen and (max-width: 900px) {
+  #menu {padding-top: 15px;}
+  #menu ul {font-size: 18px; padding: 10px;}
+  #menuBtn {background-color: transparent; top: 5px; right: 5px;}
+  #icon {size: 5px}
 }
