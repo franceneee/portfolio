@@ -61,5 +61,5 @@ a:hover {
   #menu {padding-top: 15px;}
   #menu ul {font-size: 18px; padding: 10px;}
   #menuBtn {background-color: transparent; top: 5px; right: 5px;}
-  #icon {size: 5px}
+  #icon {height: 20px}
 }
