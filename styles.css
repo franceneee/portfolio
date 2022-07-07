@@ -131,3 +131,7 @@ img {
 p {
     overflow-wrap: break-word;
 }
+
+#anim {
+    max-height: 50vh;
+}
