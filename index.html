@@ -85,20 +85,30 @@
         <form action="#" method="POST" id="contact-form">
           <table>
             <tr>
+              <td>
+                <select name="title" id="title">
+                <option value="mr">Mr</option>
+                <option value="mdm">Mdm</option>
+                <option value="mrs">Mrs</option>
+                <option value="ms">Ms</option>
+              </select>
+              </td>
+            </tr> 
+            <tr>
               <td><label for="name">Name:</label></td>
-              <td><input placeholder="name" type="text" name="name" id="name" required /></td>
+              <td><input placeholder="Name" type="text" name="name" id="name" required /></td>
             </tr>
             <tr>
               <td><label for="email">Email:</label></td>
-              <td><input placeholder="email" type="email" name="email"></td>
+              <td><input placeholder="email@mail.com" type="email" name="email"></td>
             </tr>
             <tr>
               <td><label for="message">Message:</label></td>
-              <td><textarea placeholder="message" name="message" id="message" required>Enter message here...</textarea></td>
+              <td><textarea rows="8" placeholder="Enter your message here..." name="message" id="message" required maxlength="200"></textarea></td>
             </tr>
           </table>
+          <button class="peach" type="submit" form="contact-form">Send</button>
         </form>
-        <button type="submit" form="contact-form">Send</button>
       </div>
     </div>
   </body>
