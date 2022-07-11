@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div class="section" id="home" style="margin-top: -2vh">
-      <img id="anim" draggable="false" src="./images/home-noloop.gif">
+      <img id="anim" draggable="false" src="./images/home.gif">
     </div>
     <div class="section" id="about">
       <img id="profile" draggable="false" src="./images/profile.jpg">
@@ -82,12 +82,23 @@
       <div class="content">
         <h1>Contact&nbsp;<i class="fa-solid fa-address-card"></i></h1>
         <p>Use this form or email me directly at francenemooi@gmail.com!</p>
-        <form action="#" method="POST">
-          <input type="text" name="name">
-          <input type="email" name="email">
-          <input type="text" name="message">
-          <button type="submit">Send</button>
+        <form action="#" method="POST" id="contact-form">
+          <table>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input placeholder="name" type="text" name="name" id="name" required /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input placeholder="email" type="email" name="email"></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message:</label></td>
+              <td><textarea placeholder="message" name="message" id="message" required>Enter message here...</textarea></td>
+            </tr>
+          </table>
         </form>
+        <button type="submit" form="contact-form">Send</button>
       </div>
     </div>
   </body>
