@@ -80,7 +80,7 @@ a:hover {
     background-color: #c2c9f0;
 }
 
-.color-2 {
+.secondaryColour {
     background-color: #d2c2f0;
 }
 
@@ -168,6 +168,14 @@ button {
     width: 150px;
     height: 30px;
     border-radius: 15px;
+}
+
+.tab {
+    flex-direction: row;
+}
+
+.tablinks {
+    cursor: pointer;
 }
 
 .tab button.active {

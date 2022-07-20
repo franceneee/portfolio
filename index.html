@@ -54,23 +54,23 @@
         <h1>Skills&nbsp;<i class="fa-solid fa-book-open"></i></h1>
         <p>Showcasing my skills through projects I have done...</p>
         <div class="tab">
-          <button class="tablinks" onclick="">Software Dev</button>
-          <button class="tablinks" onclick="">Robotics</button>
-          <button class="tablinks" onclick="">IoT</button>
-          <button class="tablinks" onclick="">Creative</button>
+          <button class="tablinks" onclick="openTab(event, 'swe')">Software Dev</button>
+          <button class="tablinks" onclick="openTab(event, 'robotics')">Robotics</button>
+          <button class="tablinks" onclick="openTab(event, 'iot')">IoT</button>
+          <button class="tablinks" onclick="openTab(event, 'creative')">Creative</button>
         </div>
-      </div>
-      <div id="swe" class="tabcontent">
-        <p>Development using React, React Native, Java and many others.</p>
-      </div>
-      <div id="robotics" class="tabcontent">
-        <p>Worked with sensors, microcontrollers etc.</p>
-      </div>
-      <div id="iot" class="tabcontent">
-        <p>Embedded systems programming using python using protocols like BLE.</p>
-      </div>
-      <div id="creative" class="tabcontent">
-        <p>I enjoy doing arts and craft during my free time!</p>
+        <div id="swe" class="tabcontent">
+          <p>Development using React, React Native, Java and many others.</p>
+        </div>
+        <div id="robotics" class="tabcontent">
+          <p>Worked with sensors, microcontrollers etc.</p>
+        </div>
+        <div id="iot" class="tabcontent">
+          <p>Embedded systems programming using python using protocols like BLE.</p>
+        </div>
+        <div id="creative" class="tabcontent">
+          <p>I enjoy doing arts and craft during my free time!</p>
+        </div>
       </div>
     </div>
 
@@ -124,4 +124,5 @@
       &copy; 2022 Mooi Suet Yeng, Francene. All Rights Reserved
     </p>
   </footer>
+  <script src="./main.js"></script>
 </html>
