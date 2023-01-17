@@ -5,8 +5,22 @@ window.onload = function () {
 
     menuBtn.addEventListener("click", function () {
         menu.style.visibility == "hidden" ? (menu.style.visibility = "visible") : (menu.style.visibility = "hidden");
+
+        menuBtn.classList.toggle("change");
     });
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        setFormStatus("Submitting...");
+        const { name, email, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
+        console.log(details);
+    };
+};
 
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;

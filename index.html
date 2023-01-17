@@ -1,128 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300&family=Satisfy&family=ZCOOL+KuaiLe&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/f-icon.png" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <title>Francene Mooi</title>
-  </head>
-  <body class="primaryColour">
-    <script src="/main.js"></script>
-    <button id="menuBtn">
-      <i class="fa-solid fa-bars fa-2xl" id="icon" style="color: white;"></i>
-    </button>
-    <div id="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#others">Other Links</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </div>
-    <div class="section" id="home" style="margin-top: -2vh">
-      <img id="anim" draggable="false" src="./images/home.gif">
-    </div>
-    <h1>About Me&nbsp;<i class="fa-solid fa-wand-magic-sparkles"></i></h1>
-    <div class="section" id="about">
-      <img id="profile" draggable="false" src="./images/profile.jpg">
-      <div class="content">
-        <h3>Hello there! I'm Francene.</h3>
-        <p>
-          I am currently a final year computer engineering student at the National University of Singapore, with a specialisation in IoT. An aspiring software engineer with a passion for creating beautiful and
-          functional products, I am always open to a learning opportunity. I am currently working on my portfolio website!
-        </p>
-      </div>
-    </div>
-    <div class="section" id="skills">
-      <div class="content">
-        <h1>Skills&nbsp;<i class="fa-solid fa-book-open"></i></h1>
-        <p>Showcasing my skills through projects I have done...</p>
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'swe')">Software Dev</button>
-          <button class="tablinks" onclick="openTab(event, 'robotics')">Robotics</button>
-          <button class="tablinks" onclick="openTab(event, 'iot')">IoT</button>
-          <button class="tablinks" onclick="openTab(event, 'creative')">Creative</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300&family=Satisfy&family=ZCOOL+KuaiLe&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="images/f-icon.png" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <title>Francene Mooi</title>
+    </head>
+    <body class="primaryColour">
+        <script src="/main.js"></script>
+        <button id="menuBtn" class="secondaryColour">
+            <!-- <i class="fa-solid fa-bars fa-2xl" id="icon" style="color: white"></i> -->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <div id="menu" class="secondaryColour">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#others">Other Links</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </div>
-        <div id="swe" class="tabcontent">
-          <p>Development using React, React Native, Java and many others.</p>
+        <div class="section" id="home" style="margin-top: -2vh">
+            <img id="anim" draggable="false" src="./images/home.gif" />
         </div>
-        <div id="robotics" class="tabcontent">
-          <p>Worked with sensors, microcontrollers etc.</p>
+        <h1 class="section-title">About Me&nbsp;<i class="fa-solid fa-wand-magic-sparkles"></i></h1>
+        <div class="section" id="about">
+            <img id="profile" draggable="false" src="./images/profile.jpg" />
+            <div class="content">
+                <h3>Hello there! I'm Francene.</h3>
+                <p>
+                    Currently a final year computer engineering student at NUS, with a specialisation in IoT. An aspiring software engineer with a passion for
+                    creating beautiful and functional products, I am always open to a learning opportunity. I am currently working on my portfolio website!
+                </p>
+            </div>
         </div>
-        <div id="iot" class="tabcontent">
-          <p>Embedded systems programming using python using protocols like BLE.</p>
+        <div class="section" id="skills">
+            <div class="content">
+                <h1 class="section-title">Skills&nbsp;<i class="fa-solid fa-book-open"></i></h1>
+                <p>Showcasing my skills through projects I have done...</p>
+                <div class="secondaryColour padded">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'swe')">Software Dev</button>
+                        <button class="tablinks" onclick="openTab(event, 'robotics')">Robotics</button>
+                        <button class="tablinks" onclick="openTab(event, 'iot')">IoT</button>
+                        <button class="tablinks" onclick="openTab(event, 'creative')">Creative</button>
+                    </div>
+                    <div id="swe" class="tabcontent">
+                        <p>Development using React, React Native, Java and many others.</p>
+                    </div>
+                    <div id="robotics" class="tabcontent">
+                        <p>Worked with sensors, microcontrollers etc.</p>
+                    </div>
+                    <div id="iot" class="tabcontent">
+                        <p>Embedded systems programming using python using protocols like BLE.</p>
+                    </div>
+                    <div id="creative" class="tabcontent">
+                        <p>I enjoy doing arts and craft during my free time!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="creative" class="tabcontent">
-          <p>I enjoy doing arts and craft during my free time!</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="section" id="work">
-      <div class="content">
-        <h1>Work&nbsp;<i class="fa-solid fa-briefcase"></i></h1>
-
-      </div>
-    </div>
-    <div class="section" id="others">
-      <div class="content">
-        <h1>Others&nbsp;<i class="fa-solid fa-otter"></i></h1>
-      </div>
-    </div>
-    <div class="section" id="contact">
-      <div class="content">
-        <h1>Contact Me&nbsp;<i class="fa-solid fa-address-card"></i></h1>
-        <p>Use this form or email me directly at francenemooi@gmail.com!</p>
-        <form action="#" method="POST" id="contact-form">
-          <table>
-            <tr>
-              <td>
-                <select name="title" id="title">
-                <option value="mr">Mr</option>
-                <option value="mdm">Mdm</option>
-                <option value="mrs">Mrs</option>
-                <option value="ms">Ms</option>
-              </select>
-              </td>
-            </tr> 
-            <tr>
-              <td><label for="name">Name:</label></td>
-              <td><input placeholder="Name" type="text" name="name" id="name" required /></td>
-            </tr>
-            <tr>
-              <td><label for="email">Email:</label></td>
-              <td><input placeholder="email@mail.com" type="email" name="email"></td>
-            </tr>
-            <tr>
-              <td><label for="message">Message:</label></td>
-              <td><textarea rows="8" placeholder="Enter your message here..." name="message" id="message" required maxlength="200"></textarea></td>
-            </tr>
-          </table>
-          <button class="peach" type="submit" form="contact-form">Send</button>
-        </form>
-      </div>
-    </div>
-  </body>
-  <footer>
-    <p>
-      &copy; 2022 Mooi Suet Yeng, Francene. All Rights Reserved
-    </p>
-  </footer>
-  <script src="./main.js"></script>
+        <div class="section" id="work">
+            <div class="content">
+                <h1 class="section-title">Work&nbsp;<i class="fa-solid fa-briefcase"></i></h1>
+            </div>
+        </div>
+        <div class="section" id="others">
+            <div class="content">
+                <h1 class="section-title">Others&nbsp;<i class="fa-solid fa-otter"></i></h1>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="content">
+                <h1 class="section-title">Contact Me&nbsp;<i class="fa-solid fa-address-card"></i></h1>
+                <p>Use this form or email me directly at francenemooi@gmail.com!</p>
+                <form action="#" method="POST" id="contact-form">
+                    <table>
+                        <tr>
+                            <td>
+                                <select name="title" id="title">
+                                    <option value="mr">Mr</option>
+                                    <option value="mdm">Mdm</option>
+                                    <option value="mrs">Mrs</option>
+                                    <option value="ms">Ms</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input placeholder="Name" type="text" name="name" id="name" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input placeholder="email@mail.com" type="email" name="email" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td>
+                                <textarea rows="8" placeholder="Enter your message here..." name="message" id="message" required maxlength="200"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="peach" type="submit" form="contact-form">Send</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>&copy; 2022 Mooi Suet Yeng, Francene. All Rights Reserved</p>
+    </footer>
+    <script src="./main.js"></script>
 </html>
