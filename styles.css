@@ -56,6 +56,10 @@ a:hover {
     text-decoration-style: wavy;
 }
 
+.section-title {
+    margin-bottom: 0.5vh;
+}
+
 .section {
     margin-bottom: 5vh;
     display: flex;
@@ -63,6 +67,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 0% 10%;
+    line-height: 1.5;
+    vertical-align: middle;
 }
 
 .content {
@@ -92,8 +98,8 @@ a:hover {
     background-color: #f0c2c9;
 }
 
-.color-6 {
-    color: #f0d2c2;
+.highlightColour {
+    background-color: #e8efff;
 }
 
 @media screen and (max-width: 900px) {
@@ -120,6 +126,12 @@ a:hover {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .profile-container {
+        display: flex;
+    }
+}
+
 img {
     pointer-events: none;
     margin: 0vh 5vw;
@@ -135,6 +147,7 @@ img {
 
 p {
     overflow-wrap: break-word;
+    text-align: center;
 }
 
 #anim {
@@ -151,7 +164,10 @@ form {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-input, textarea, table, select {
+input,
+textarea,
+table,
+select {
     font-size: 18px;
     width: 100%;
     resize: none;
@@ -172,6 +188,7 @@ button {
 
 .tablinks {
     cursor: pointer;
+    margin: 2px;
 }
 
 .tab button.active {
@@ -181,20 +198,30 @@ button {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     border-top: none;
+    width: 60vw;
 }
 
 footer p {
     font-size: 16px;
 }
 
-.bar1, .bar2, .bar3 {
+.paddedContainer {
+    margin: 2px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #e8efff;
-    margin: 6px 6px;
     transition: 0.4s;
+    margin: 6px;
 }
 
 .change .bar1 {
@@ -207,4 +234,40 @@ footer p {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    background-color: #e8efff;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 5px;
+    display: block;
+    object-fit: contain;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.profile-container {
+    margin: 1vh 0vw;
+}
+
+.profile-container p {
+    max-width: 55ch;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
