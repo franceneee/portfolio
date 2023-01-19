@@ -291,6 +291,14 @@ footer p {
     padding: 2vh 2vw;
 }
 
+iconify-icon {
+    border: transparent 1px solid;
+}
+
+iconify-icon:hover {
+    border: black 1px solid;
+}
+
 /*timeline css gotten from https://www.w3schools.com/howto/howto_css_timeline.asp*/
 /* The actual timeline (the vertical ruler) */
 .timeline {
