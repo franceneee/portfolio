@@ -29,7 +29,7 @@
             <div class="bar3"></div>
         </button>
         <div id="menu" class="secondaryColour">
-            <ul>
+            <ul class="menu-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -60,7 +60,7 @@
         <div class="section" id="skills">
             <div class="content">
                 <h1 class="section-title">Skills&nbsp;<i class="fa-solid fa-book-open"></i></h1>
-                <p>Showcasing my skills through projects I have done...</p>
+                <p>Showcasing my skills through some projects I have done...</p>
                 <div class="secondaryColour paddedContainer">
                     <div class="tab">
                         <button class="tablinks" onclick="openTab(event, 'swe')">Software Dev</button>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="item highlightColour">
                                 <p>Gameception: Hungry Kitty</p>
-                                <a class="hyperlink" href="https://itch.io/jam/gameception2022" target="_blank">gameception site</a>                                
+                                <a class="hyperlink" href="https://itch.io/jam/gameception2022" target="_blank">gameception site</a>
                                 <a class="hyperlink" href="https://frankiex3.itch.io/hungry-kitty" target="_blank">play</a>
                                 <img class="item-img" src="./images/gallery/hungrykitty.png" />
                                 <div class="chipContainer">
@@ -141,6 +141,7 @@
                                 <div class="chipContainer">
                                     <p class="chip peach">Java</p>
                                     <p class="chip peach">JUnit</p>
+                                    <p class="chip peach">Git</p>
                                 </div>
                             </div>
                         </div>
@@ -165,6 +166,7 @@
                                 <div class="chipContainer">
                                     <p class="chip peach">Arduino</p>
                                     <p class="chip peach">Bare metal programming</p>
+                                    <p class="chip peach">Git</p>
                                 </div>
                             </div>
                         </div>
@@ -187,6 +189,7 @@
                                 <div class="chipContainer">
                                     <p class="chip peach">python</p>
                                     <p class="chip peach">telegram bot</p>
+                                    <p class="chip peach">WeMos</p>
                                 </div>
                             </div>
                             <div class="item highlightColour">
@@ -233,36 +236,73 @@
             </div>
         </div>
         <div class="section" id="work">
-            <div class="content"></div>
-            <h1 class="section-title" style="display: flex; justify-content: center">
-                Work&nbsp;
-                <a style="color: black" href="https://www.linkedin.com/in/francene-mooi"
-                    ><iconify-icon icon="uil:linkedin" width="50" height="50"></iconify-icon
-                ></a>
-            </h1>
-            <div class="timeline">
-                <div class="container left">
-                    <div class="work-content highlightColour">
-                        <h2 id="axomem">2022</h2>
-                        <p>Software Engineer Intern @ <a class="hyperlink" href="https://axomem.io/" target="_blank">axomem</a></p>
+            <div class="content">
+                <h1 class="section-title" style="display: flex; justify-content: center">
+                    Work&nbsp;
+                    <a style="color: black" href="https://www.linkedin.com/in/francene-mooi"
+                        ><iconify-icon icon="uil:linkedin" width="50" height="50"></iconify-icon
+                    ></a>
+                </h1>
+                <div class="timeline">
+                    <div class="container left">
+                        <div class="work-content highlightColour">
+                            <img class="work-logo" src="./images/gallery/axomem-logo.png" />
+                            <h2 id="axomem">2022</h2>
+                            <p>Software Engineer Intern @ <a class="hyperlink" href="https://axomem.io/" target="_blank">axomem</a></p>
+                            <p class="purple-text"><i class="fa-solid fa-calendar-days"></i>&nbsp;Jun - Aug</p>
+                            <ul class="description">
+                                <li>Maintained and debugged software on Unity3D for AR, VR and 3d visualisation</li>
+                                <li>Utilised Atlassian Jira to keep track of tasks and log issues</li>
+                                <li>Created Python scripts to sync Bluetooth devices and sensor data to the Digital Twin platform</li>
+                                <li>Tested Text-to-Speech and Speech-to-Text capabilities on the Raspberry Pi</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="container right">
-                    <div class="work-content highlightColour">
-                        <h2>2021</h2>
-                        <p>Software Engineer Intern @ <a class="hyperlink" href="https://www.ftag.com/" target="_blank">FTAG</a></p>
+                    <div class="container right">
+                        <div class="work-content highlightColour">
+                            <img class="work-logo" src="./images/gallery/ftag-logo.png" />
+                            <h2>2021</h2>
+                            <p>Software Engineer Intern @ <a class="hyperlink" href="https://www.ftag.com/" target="_blank">FTAG</a></p>
+                            <p class="purple-text"><i class="fa-solid fa-calendar-days"></i>&nbsp;May - Nov</p>
+                            <ul class="description">
+                                <li>Developed an image uploader with AWS S3 on a prototype mobile app (React Native framework)</li>
+                                <li>Utilised AWS lambda and the Express.js framework to write APIs for uploading images and documents to S3</li>
+                                <li>Debugged APIs with Amazon Gateway and Insomnia</li>
+                                <li>Designed an admin website with React, for admins to perform basic CRUD functions</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="container right">
-                    <div class="work-content highlightColour">
-                        <h2>2021</h2>
-                        <p>Teaching Assistant @ <a class="hyperlink" href="https://www.nus.edu.sg" target="_blank">NUS</a></p>
+                    <div class="container right">
+                        <div class="work-content highlightColour">
+                            <img class="work-logo" src="./images/gallery/nus-logo.png" />
+                            <h2>2021</h2>
+                            <p>Teaching Assistant @ <a class="hyperlink" href="https://www.nus.edu.sg" target="_blank">NUS</a></p>
+                            <p class="purple-text"><i class="fa-solid fa-calendar-days"></i>&nbsp;Jan - Apr</p>
+                            Teaching Assistant for CG1112: Engineering Principles and Practices II.
+                            <ul class="description">
+                                <li>
+                                    Guided and assisted 16 undergraduates during studio sessions, covering fundamental concepts such as Linux kernel and
+                                    bare-metal programming
+                                </li>
+                                <li>Graded about 40 lab reports and provided feedback</li>
+                                <li>Proctored for online exams</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="container left">
-                    <div class="work-content highlightColour">
-                        <h2>2019</h2>
-                        <p>Service Crew @ <a class="hyperlink" href="https://www.siamkitchen.com.sg/" target="_blank">Siam Kitchen</a></p>
+                    <div class="container left">
+                        <div class="work-content highlightColour">
+                            <img class="work-logo" src="./images/gallery/siam-kitchen-logo.png" />
+                            <h2>2019</h2>
+                            <p>Service Crew @ <a class="hyperlink" href="https://www.siamkitchen.com.sg/" target="_blank">Siam Kitchen</a></p>
+                            <p class="purple-text"><i class="fa-solid fa-calendar-days"></i>&nbsp;Feb - Jul</p>
+                            <ul class="description">
+                                <li>
+                                    Delegated daily operations of the restaurant which comprised of serving and garnishing food and maintaining the general
+                                    cleanliness of the outlet
+                                </li>
+                                <li>Interacted with customers and handled cashier transactions</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
