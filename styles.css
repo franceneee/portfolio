@@ -5,7 +5,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 #menuBtn {
@@ -64,7 +64,7 @@ a:hover {
     margin-bottom: 5vh;
     justify-content: center;
     align-items: center;
-    margin: 1vh 10%;
+    margin-top: 1vh;
     line-height: 1.5;
     vertical-align: middle;
 }
@@ -123,11 +123,9 @@ a:hover {
     form {
         width: 90vw;
     }
-}
 
-@media screen and (min-width: 1000px) {
-    .profile-container {
-        display: flex;
+    #profile {
+        display: none;
     }
 }
 
@@ -183,6 +181,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    box-shadow: 5px 5px #8c93b8;
 }
 
 .tab {
@@ -196,6 +195,7 @@ button:hover {
 
 .tab button.active {
     background-color: #ccc;
+    pointer-events: none;
 }
 
 .tabcontent {
@@ -211,7 +211,7 @@ footer p {
 }
 
 .paddedContainer {
-    margin: 2px;
+    margin: 2px 2vw;
     padding: 20px;
     border-radius: 20px;
     border: none;
@@ -277,6 +277,7 @@ img.item {
 
 .profile-container {
     margin: 1vh 0vw;
+    display: flex;
 }
 
 .profile-container p {
@@ -441,8 +442,6 @@ iconify-icon:hover {
 
 .top {
     animation: anim 1s infinite alternate;
-    min-height: 60vh;
-    max-height: 80vh;
     object-fit: contain;
     position: absolute;
 }
@@ -464,10 +463,7 @@ iconify-icon:hover {
 
 .bottom {
     opacity: 1;
-    min-height: 60vh;
-    max-height: 80vh;
     object-fit: contain;
-    position: absolute;
 }
 
 .chipContainer {
