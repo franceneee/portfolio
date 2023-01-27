@@ -419,19 +419,6 @@ iconify-icon:hover {
     .right {
         left: 0%;
     }
-
-    h1,h2{
-        font-size: 30px;
-    }
-
-    .hello {
-        font-size: 20px;
-    }
-
-    p, li {
-        font-size: 16px;
-    }
-
 }
 
 .hyperlink {
@@ -481,6 +468,15 @@ iconify-icon:hover {
     font-size: 14px;
 }
 
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
 @media screen and (max-width: 900px) {
     body {
         width: 100vw;
@@ -517,7 +513,7 @@ iconify-icon:hover {
     }
 
     .paddedContainer {
-        padding: 0px;
+        padding: 10px 0 10px 0;
     }
 
     .tabcontent {
@@ -535,5 +531,17 @@ iconify-icon:hover {
     .work-logo {
         position: relative;
         float: none;
+    }
+
+    h1,h2{
+        font-size: 30px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    p, li, .hyperlink {
+        font-size: 16px;
     }
 }
