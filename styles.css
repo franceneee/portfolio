@@ -419,6 +419,19 @@ iconify-icon:hover {
     .right {
         left: 0%;
     }
+
+    h1,h2{
+        font-size: 30px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
 }
 
 .hyperlink {
