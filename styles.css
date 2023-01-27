@@ -469,3 +469,20 @@ iconify-icon:hover {
     object-fit: contain;
     position: absolute;
 }
+
+.chipContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2vh 2vw;
+}
+
+.chip {
+    border-radius: 105px;
+    padding: 6px;
+    margin: 2px;
+    font-size: 14px;
+}
