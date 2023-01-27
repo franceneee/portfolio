@@ -1,11 +1,11 @@
 body {
     font-family: "Fredoka One", cursive;
-    flex-wrap: wrap;
     text-align: center;
     font-size: 20px;
     margin: 0;
     padding: 0;
     height: 100%;
+    display: block;
 }
 
 #menuBtn {
@@ -98,35 +98,6 @@ a:hover {
 
 .highlightColour {
     background-color: #e8efff;
-}
-
-@media screen and (max-width: 900px) {
-    #menu {
-        padding-top: 15px;
-    }
-    #menu ul {
-        font-size: 18px;
-        padding: 10px;
-    }
-    #menuBtn {
-        background-color: transparent;
-        top: 5px;
-        right: 5px;
-    }
-    #icon {
-        height: 20px;
-    }
-    .section {
-        flex-direction: column;
-    }
-
-    form {
-        width: 90vw;
-    }
-
-    #profile {
-        display: none;
-    }
 }
 
 img {
@@ -249,7 +220,7 @@ footer p {
 }
 
 .item {
-    max-width: 450px;
+    width: 450px;
     border-radius: 20px;
     margin: 5px;
     flex-direction: column;
@@ -262,7 +233,6 @@ footer p {
 .item-img {
     width: 400px;
     object-fit: contain;
-    margin-bottom: 2vh;
 }
 
 img.item {
@@ -271,7 +241,6 @@ img.item {
 }
 
 .item:hover {
-    cursor: pointer;
     background-color: white;
 }
 
@@ -481,4 +450,49 @@ iconify-icon:hover {
     padding: 6px;
     margin: 2px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+    #menu {
+        padding-top: 15px;
+    }
+    #menu ul {
+        font-size: 18px;
+        padding: 10px;
+    }
+    #menuBtn {
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+    }
+    #icon {
+        height: 20px;
+    }
+    .section {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    #profile {
+        display: none;
+    }
+
+    .paddedContainer {
+        padding: 0px;
+    }
+
+    .tabcontent {
+        width: 100vw;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .item-img {
+        width: 90vw
+    }
 }
