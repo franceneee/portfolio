@@ -453,6 +453,13 @@ iconify-icon:hover {
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        width: 100vw;
+        display: block;
+    }
+    #anim {
+        max-width: 90vw;
+    }
     #menu {
         padding-top: 15px;
     }
