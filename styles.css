@@ -515,7 +515,7 @@ iconify-icon:hover {
     }
 
     .paddedContainer {
-        padding: 10px 0 10px 0;
+        padding: 10px 8px;
     }
 
     .tabcontent {
